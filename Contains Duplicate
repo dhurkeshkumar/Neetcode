@@ -1,0 +1,15 @@
+class Solution {
+    public boolean hasDuplicate(int[] no) {
+        for(int i=0;i<no.length;i++)
+        {
+            for(int j=i+1;j<no.length;j++)
+            {
+                if(no[i]==no[j])
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
